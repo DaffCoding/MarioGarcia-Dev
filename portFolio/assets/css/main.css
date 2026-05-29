@@ -1662,4 +1662,10 @@ input, select, textarea {
 		#whoAmI h3{
 			font-size: 1rem;
 		}
-		
+
+		h2 {
+			letter-spacing: 0.23rem;
+		}
+		.inner h3 {
+			letter-spacing: 0.05rem;
+		}
