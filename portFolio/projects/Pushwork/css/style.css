@@ -1,0 +1,631 @@
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  display: flex;
+  flex-direction: column;
+  }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.lego {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 40rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+header {
+  background-color: #172030;
+  height: 8rem;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+header nav span{
+  font-size: 4rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  list-style-type: none;
+}
+header nav ul + button {
+  border: solid 2px black;
+  height: 75%;
+  width: 10%;
+  margin: 2em;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px white;
+  color: white;
+  height: 75%;
+  width: 8%;
+}
+
+.section1 {
+  background-color: #172030;
+  color: #EBF5FE;
+}
+.section1 > section {
+  Display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 45%;
+  padding: 0.5rem;
+}
+.section1 > section h1 {
+  font-size: xx-large;
+  font-width: 70%;
+  font-weight: bold;
+}
+.section1 > section h1 + p {
+  font-size: large;
+  font-width: 50%;
+  font-weight: normal;
+  margin: 0 0 3em 0;
+}
+.section1 > section h1, h1 + p {
+  align-self: flex-start;
+  font-weight: normal;
+}
+.section1 > section .buttonWrapper {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.section1 > section .buttonWrapper button {
+  height: 4em;
+  width: 12em;
+  margin: 0 3em;
+}
+.section1 > section .buttonWrapper button + button {
+  margin: 0 8em 0 0;
+}
+.section1 > section + section {
+  border: 2em solid white;
+  border-radius: 5% 5%;
+  background-color: #DFE1EA;
+}
+.section1 > section + section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  padding: 1rem;
+}
+.section1 > section + section > div > span {
+  color: black;
+}
+.section1 + div {
+  background-image: linear-gradient(to bottom right, #172030 50%, #DFE1EA 50%);
+  height: 8em;
+  width: 100%;
+}
+
+.section2 {
+  background-color: #DFE1EA;
+}
+.section2 section {
+  Display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  width: 45%;
+  padding: 0.5rem;
+}
+.section2 section span, .section2 section h2, .section2 section p, .section2 section button {
+  align-self: flex-start;
+}
+.section2 section span {
+  margin: 1em 0 0 0;
+}
+.section2 section h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  width: 60%;
+}
+.section2 section p {
+  font-size: large;
+  font-width: 50%;
+  font-weight: normal;
+  margin: 0 0 1.75em 0;
+}
+.section2 section p + p {
+  margin: 0 0 3em 0;
+}
+.section2 section button {
+  height: 4em;
+  width: 12em;
+  margin: 0 3em;
+}
+
+.section2 > .divWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section2 > .divWrapper div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15em;
+  width: 40%;
+}
+.section2 > .divWrapper > div > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
+.section2 .divWrapper div .imgHolder2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 80%;
+}
+.section2 .divWrapper div .blueBG {
+  background-color: #172030;
+  color: white;
+}
+.section2 .divWrapper div .imgHolder2 + section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  width: 80%;
+}
+.section2 .divWrapper div .imgHolder2 + section h3, .section2 .divWrapper div .imgHolder2 + section p {
+  text-align: center;
+  align-self: center;
+}
+.section2 .divWrapper div .imgHolder2 + section h3 {
+  font-size: 1.0em;
+}
+.section2 .divWrapper div .imgHolder2 + section p {
+  font-size: 0.80em;
+}
+
+
+.section3 {
+  background-color: #DFE1EA;
+  color: #172030;
+}
+.section3 > section {
+  Display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 45%;
+  padding: 0.5rem;
+}
+.section3 > section h3 {
+  font-size: xx-large;
+  font-width: 70%;
+  font-weight: bold;
+}
+.section3 > section h3 + p, .section3 section h3 + p + p {
+  font-size: large;
+  font-width: 50%;
+  font-weight: normal;
+  margin: 0 0 3em 0;
+}
+.section3 > section h3, h3 + p, .section3 section h3 + p + p {
+  align-self: flex-start;
+  font-weight: normal;
+}
+.section3 > section .buttonWrapper {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.section3 > section .buttonWrapper button {
+  height: 4em;
+  width: 12em;
+  margin: 0 3em;
+}
+.section3 > section .buttonWrapper button + button {
+  margin: 0 9em 0 0;
+}
+.section3 .imgHolder3 {
+  border: 2em solid white;
+  border-radius: 5% 5%;
+  background-color: #172030;
+}
+.section3 .imgHolder3 + section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+.section3 section > div > span {
+  color: white;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 52em;
+  background-color: #DFE1EA;
+  color: #172030;
+}
+.section4 > section {
+  height: 20%;
+  width: 100%;
+  Display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+.section4 > .header-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 0 0 0;
+}
+.section4 > .header-Section > h3, .section4 > .header-Section > p {
+  height: 45%;
+  width: 100%;
+}
+.section4 > .header-Section > p {
+  width: 100%
+ }
+.section4 > .mainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+}
+.section4 > .mainSection > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 48%;
+}
+.section4 > .mainSection > .imgHolder4 {
+  border: 2em solid white;
+  border-radius: 8% 8%;
+  background-color: #172030;
+}
+
+.section4 > .mainSection > .imgHolder4 + section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.section4 > .mainSection > .imgHolder4 + section > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section4 > footerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+}
+
+.section4 > .footerSection > button {
+  height: 3rem;
+  width: 8rem;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 48em;
+  width: 100%;
+}
+.section5 .upperSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 25%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #DFE1EA 50%, #172030 50%);
+}
+.section5 .upperSection span, .section5 .upperSection h3 {
+  padding: 0 0 0 2rem;
+  width: 18%;
+}
+.section5 .upperSection span {
+  font-size: 0.75em;
+}
+.section5 .upperSection h3 {
+  font-size: medium;
+}
+.section5 .bottomSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  height: 75%;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #172030;
+  color: #EBF5FE;
+}
+.section5 .bottomSection > div {
+  border: solid 3px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em 0;
+  height: 30%;
+  width: 30%;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+.section6 {
+  background-color: #172030;
+  color: #EBF5FE;
+}
+.section6 > section {
+  Display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  width: 45%;
+  padding: 0.5rem;
+}
+.section6 .imgHolder6 {
+  border: 2em solid white;
+  border-radius: 5% 5%;
+  background-color: #172030;
+}
+.section6 > section .buttonWrapper {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section6 > section .buttonWrapper button {
+  height: 4em;
+  width: 11em;
+  margin: 0 3em;
+}
+.section6 > section > div > span {
+  color: white;
+}
+
+.section7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 45em;
+  width: 100%;
+}
+.section7 > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.section7 > .upperSection {
+  display: flex;
+  height: 75%;
+  width: 100%;
+  
+}
+.section7 > .bottomSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  background-color: #172030;
+  color: #EBF5FE;
+}
+.section7 > .bottomSection > .leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.section7 > .bottomSection > .rightSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.section7 > .bottomSection > .rightSide > button {
+  height: 3rem;
+  width: 7rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 30rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+footer > section {
+  height: 100%;
+  width: 40%;
+}
+
+footer > .leftSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 40%;
+  padding: 0.8em;
+}
+footer > .leftSide > .contactUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  height: 100%;
+  width: 40%;
+}
+footer > .leftSide > .contactUl > h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer > .leftSide > .contactUl > p {
+  font-size: 1rem;
+  text-align: left;
+}
+footer > .leftSide > .contactUl > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+footer > .leftSide > .productUl {
+  height: 100%;
+  width: 50%;
+  padding: 0.5em;
+}
+footer > .leftSide > .productUl > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+  flex-wrap: wrap;
+  height: 95%;
+  width: 100%;
+}
+footer > .leftSide > .productUl > ul > li {
+  height: 15%;
+  width: 50;
+}
+footer > .rightSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer > .rightSide > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer > .rightSide > div > h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer > .rightSide > div > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+  flex-wrap: wrap;
+  height: 95%;
+  width: 100%;
+  padding: 0 0 40% 0;
+}
+footer > .rightSide > div > ul > li {
+}
+footer > .rightSide > div > h6 + ul + div {
+  align-self: flex-start;
+}
+footer > .rightSide > div > .resource > span {
+  align-self: center;
+}
