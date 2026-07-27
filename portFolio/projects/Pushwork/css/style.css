@@ -36,17 +36,16 @@ body {
 /*******************************************/
 
 .lego {
-  border: solid 1px black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 40rem;
   width: 100%;
-  padding: 0.2rem;
+  padding: 0.2rem 0.4rem;
 }
 header {
-  background-color: #172030;
+  background-color: #AB482D;
   height: 8rem;
   width: 100%;
 }
@@ -82,13 +81,16 @@ header nav ul li {
   align-items: center;
   justify-content: center;
   border: solid 2px white;
-  color: white;
-  height: 75%;
-  width: 8%;
+  color: #AB482D;
+  background-color: #F5F9E5;
+  height: 2.5em;
+  width: 4em;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .section1 {
-  background-color: #172030;
+  background-color: #AB482D;
   color: #EBF5FE;
 }
 .section1 > section {
@@ -125,15 +127,15 @@ header nav ul li {
   text-align: center;
 }
 .section1 > section .buttonWrapper button {
-  height: 4em;
-  width: 12em;
-  margin: 0 3em;
+  height: 3em;
+  width: 10em;
+  margin: 0 4em;
 }
 .section1 > section .buttonWrapper button + button {
   margin: 0 8em 0 0;
 }
 .section1 > section + section {
-  border: 2em solid white;
+  border: 2em solid #F5F9E5;
   border-radius: 5% 5%;
   background-color: #DFE1EA;
 }
@@ -149,13 +151,13 @@ header nav ul li {
   color: black;
 }
 .section1 + div {
-  background-image: linear-gradient(to bottom right, #172030 50%, #DFE1EA 50%);
+  background-image: linear-gradient(to bottom right, #AB482D 50%, #F5F9E5 50%);
   height: 8em;
   width: 100%;
 }
 
 .section2 {
-  background-color: #DFE1EA;
+  background-color: #F5F9E5;
 }
 .section2 section {
   Display: flex;
@@ -222,7 +224,7 @@ header nav ul li {
   width: 80%;
 }
 .section2 .divWrapper div .blueBG {
-  background-color: #172030;
+  background-color: #AB482D;
   color: white;
 }
 .section2 .divWrapper div .imgHolder2 + section {
@@ -246,7 +248,7 @@ header nav ul li {
 
 
 .section3 {
-  background-color: #DFE1EA;
+  background-color: #F5F9E5;
   color: #172030;
 }
 .section3 > section {
@@ -283,17 +285,25 @@ header nav ul li {
   text-align: center;
 }
 .section3 > section .buttonWrapper button {
-  height: 4em;
-  width: 12em;
-  margin: 0 3em;
+  height: 3em;
+  width: 10em;
+  margin: 0 4em;
 }
 .section3 > section .buttonWrapper button + button {
   margin: 0 9em 0 0;
 }
 .section3 .imgHolder3 {
-  border: 2em solid white;
+  border: 2em solid #AB482D;
   border-radius: 5% 5%;
-  background-color: #172030;
+  background-color: #DFE1EA;
+}
+.section3 .imgHolder3 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  padding: 1rem;
 }
 .section3 .imgHolder3 + section > div {
   display: flex;
@@ -303,7 +313,7 @@ header nav ul li {
   padding: 1rem;
 }
 .section3 section > div > span {
-  color: white;
+  color: black;
 }
 
 .section4 {
@@ -312,7 +322,7 @@ header nav ul li {
   justify-content: space-around;
   align-items: center;
   height: 52em;
-  background-color: #DFE1EA;
+  background-color: #F5F9E5;
   color: #172030;
 }
 .section4 > section {
@@ -355,9 +365,20 @@ header nav ul li {
   width: 48%;
 }
 .section4 > .mainSection > .imgHolder4 {
-  border: 2em solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2em solid #AB482D;
   border-radius: 8% 8%;
-  background-color: #172030;
+  background-color: #DFE1EA
+}
+.section4 > .mainSection > .imgHolder4 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  padding: 1rem;
 }
 
 .section4 > .mainSection > .imgHolder4 + section {
@@ -374,7 +395,7 @@ header nav ul li {
   align-items: flex-start;
 }
 
-.section4 > footerSection {
+.section4 > .footerSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,9 +403,9 @@ header nav ul li {
   width: 100%;
 }
 
-.section4 > .footerSection > button {
-  height: 3rem;
-  width: 8rem;
+.section4 > .footerSection > a > button {
+  height: 3em;
+  width: 10em;
 }
 
 .section5 {
@@ -402,7 +423,7 @@ header nav ul li {
   align-items: flex-start;
   height: 25%;
   width: 100%;
-  background-image: linear-gradient(to bottom right, #DFE1EA 50%, #172030 50%);
+  background-image: linear-gradient(to bottom right, #F5F9E5 50%, #AB482D 50%);
 }
 .section5 .upperSection span, .section5 .upperSection h3 {
   padding: 0 0 0 2rem;
@@ -425,8 +446,8 @@ header nav ul li {
   height: 75%;
   width: 100%;
   padding: 2rem 0;
-  background-color: #172030;
-  color: #EBF5FE;
+  background-color: #AB482D;
+  color: #F5F9E5;
 }
 .section5 .bottomSection > div {
   border: solid 3px white;
@@ -442,7 +463,7 @@ header nav ul li {
 }
 
 .section6 {
-  background-color: #172030;
+  background-color: #AB482D;
   color: #EBF5FE;
 }
 .section6 > section {
@@ -455,9 +476,9 @@ header nav ul li {
   padding: 0.5rem;
 }
 .section6 .imgHolder6 {
-  border: 2em solid white;
+  border: 2em solid #F5F9E5;
   border-radius: 5% 5%;
-  background-color: #172030;
+  background-color: #DFE1EA;
 }
 .section6 > section .buttonWrapper {
   height: 20%;
@@ -468,9 +489,8 @@ header nav ul li {
   align-items: center;
 }
 .section6 > section .buttonWrapper button {
-  height: 4em;
-  width: 11em;
-  margin: 0 3em;
+  height: 3em;
+  width: 10em;
 }
 .section6 > section > div > span {
   color: white;
@@ -504,8 +524,8 @@ header nav ul li {
   align-items: center;
   height: 25%;
   width: 100%;
-  background-color: #172030;
-  color: #EBF5FE;
+  background-color: #AB482D;
+  color: #F5F9E5;
 }
 .section7 > .bottomSection > .leftSide {
   display: flex;
