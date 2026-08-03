@@ -196,6 +196,7 @@ header nav ul + button {
 }
 
 .section1 > .leftSide > .buttonWrapper > a > button {
+  border: greenyellow 2px solid;
   font-size: 1em;
   font-weight: 200;
   height: 60%;
@@ -229,10 +230,6 @@ header nav ul + button {
     border-width: 0.5em 2.5em;
     border-radius: 5% 5%;
   }
-}
-
-.imgHolder1 img {
-  height: 100%;
 }
 
 .section1 + .divider1 {
@@ -466,8 +463,240 @@ header nav ul + button {
   color: black;
 }
 
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 52em;
+  background-color: #F5F9E5;
+  color: #172030;
+}
+.section4 > section {
+  height: 20%;
+  width: 100%;
+  Display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+.section4 > .header-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 0 0 0;
+}
+.section4 > .header-Section > h3, .section4 > .header-Section > p {
+  height: 45%;
+  width: 100%;
+}
+.section4 > .header-Section > p {
+  width: 100%
+ }
+.section4 > .mainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+}
+.section4 > .mainSection > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 48%;
+}
+.section4 > .mainSection > .imgHolder4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2em solid #AB482D;
+  border-radius: 8% 8%;
+  background-color: #DFE1EA
+}
+.section4 > .mainSection > .imgHolder4 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  padding: 1rem;
+}
+
+.section4 > .mainSection > .imgHolder4 + section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.section4 > .mainSection > .imgHolder4 + section > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section4 > .footerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+}
+
+.section4 > .footerSection > a > button {
+  height: 3em;
+  width: 10em;
+}
+
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 48em;
+  width: 100%;
+}
+.section5 .upperSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 25%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #F5F9E5 50%, #AB482D 50%);
+}
+.section5 .upperSection span, .section5 .upperSection h3 {
+  padding: 0 0 0 2rem;
+  width: 18%;
+}
+.section5 .upperSection span {
+  font-size: 0.75em;
+}
+.section5 .upperSection h3 {
+  font-size: medium;
+}
+.section5 .bottomSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  height: 75%;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #AB482D;
+  color: #F5F9E5;
+}
+.section5 .bottomSection > div {
+  border: solid 3px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em 0;
+  height: 30%;
+  width: 30%;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+.section6 {
+  background-color: #AB482D;
+  color: #EBF5FE;
+}
+.section6 > section {
+  Display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  width: 45%;
+  padding: 0.5rem;
+}
+.section6 .imgHolder6 {
+  border: 2em solid #F5F9E5;
+  border-radius: 5% 5%;
+  background-color: #DFE1EA;
+}
+.section6 > section .buttonWrapper {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section6 > section .buttonWrapper button {
+  height: 3em;
+  width: 10em;
+}
+.section6 > section > div > span {
+  color: white;
+}
+
+.section7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 45em;
+  width: 100%;
+}
+.section7 > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.section7 > .upperSection {
+  display: flex;
+  height: 75%;
+  width: 100%;
+  
+}
+.section7 > .bottomSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  background-color: #AB482D;
+  color: #F5F9E5;
+}
+.section7 > .bottomSection > .leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.section7 > .bottomSection > .rightSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.section7 > .bottomSection > .rightSide > button {
+  height: 3rem;
+  width: 7rem;
+}
+
 footer {
-  background: linear-gradient(to bottom right, #F5F9E5 50%, #AB482D 50%);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
