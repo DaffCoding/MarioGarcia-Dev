@@ -437,7 +437,11 @@ header nav ul + button {
 .section3 > .rightSide > .buttonWrapper button {
   height: 3em;
   width: 10em;
-  margin: 0 4em;
+  @media (max-width: 1100px){
+    height: 2em;
+    width: 3em
+    line-height: 1.1em;
+  }
 }
 .section3 > .rightSide > .buttonWrapper button + button {
   margin: 0 9em 0 0;
