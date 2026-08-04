@@ -330,6 +330,9 @@ a {
   background-color: #F5F9E5;
   color: #172030;
   height: 50rem;
+  @media (max-width: 1100px) {
+    height: 32rem;
+  }
 }
 .section3 > section {
   Display: flex;
