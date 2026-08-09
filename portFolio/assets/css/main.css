@@ -1670,8 +1670,30 @@ input, select, textarea {
 			letter-spacing: 0.05rem;
 		}
 
+		#experience {
+			padding: 0.823em;
+		}
+
 		#experience > h2 {
 			font-size: 1em;
+			width: 100%;
+			@media (max-width: 1000px) {
+				font-size: small;
+			}
+		}
+
+		#experience > p {
+			line-height: 1.5;
+			@media (max-width: 1000px) {
+				line-height: 1.2;
+				font-size: x-small;
+			}
+		}
+
+		#experience > p.result {
+			@media (max-width: 1000px) {
+				font-size: 1.1em;
+			}
 		}
 
 		#skills {
