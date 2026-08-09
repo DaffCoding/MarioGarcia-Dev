@@ -1670,6 +1670,10 @@ input, select, textarea {
 			letter-spacing: 0.05rem;
 		}
 
+		#experience > h2 {
+			font-size: 1em;
+		}
+
 		#skills {
 			display: flex;
 			flex-wrap: wrap;
@@ -1688,5 +1692,23 @@ input, select, textarea {
 			padding: 0.823em;
 			height: 22em;
 			width: 45%;
-			line-height: 1.5;
+			line-height: 1.0;
+		}
+		#skills > section > h3 {
+			line-height: 1.3;
+			font-size: 1.3em;
+			@media (max-width: 1000px) {
+				line-height: 1.3;
+				font-size: medium;
+			}
+		}
+		#skills > section > p {
+			line-height: 1.2;
+			font-size: 1em;
+			width: 90%;
+			@media (max-width: 1000px) {
+				line-height: 1.1;
+				font-size: smaller;
+				width: 95%;
+			}
 		}
