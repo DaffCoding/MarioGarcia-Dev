@@ -1669,3 +1669,24 @@ input, select, textarea {
 		.inner h3 {
 			letter-spacing: 0.05rem;
 		}
+
+		#skills {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			height: 100%;
+			width: 100%;
+		}
+
+		#skills > h2 + p {
+			text-align: center;
+			width: 85%;
+		}
+
+		#skills > section {
+			border: solid 2px white;
+			padding: 0.823em;
+			height: 22em;
+			width: 45%;
+			line-height: 1.5;
+		}
