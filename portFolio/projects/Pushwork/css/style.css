@@ -618,3 +618,6 @@ header nav ul + button {
   height: 3em;
   width: 10em;
 }
+.section1 > .rightSide > .imgHolder1 > img {
+  height: 100%;
+}
