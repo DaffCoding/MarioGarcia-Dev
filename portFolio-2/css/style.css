@@ -1,0 +1,113 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  
+}
+
+/* Header && Footer : color */
+
+/********************** ********************
+/* LAYOUT
+/*******************************************/
+header, footer {
+  color: #F3EEE7;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B1726;
+  height: 6rem;
+  width: 100%;
+}
+
+footer {
+  background-color: #0B1726;
+  height: 14rem;
+  width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* 
+Muted Copper | #B45E35 | Button
+Deep Midnight | #0B1726 | Header / Footer
+Midnight Navy | #101F32 | Hero
+Champagne | #C9B79B | Projects, Lighter-Text, border
+Warm Ivory | #F3EEE7 | Projects, Lighter-Text 
+*/
+
+
+main.hero {
+  display: flex;
+  color: #E8E9E8;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #101F32;
+  height: 32rem;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.hero > .heroLeft {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.hero > .heroRight {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero > .heroRight > div {
+  border: solid 10px #C9B79B;
+  height: 100%;
+  width: auto;
+}
+
+.hero > .heroRight > div > img {
+  height: 100%;
+}
+
+main.hero + main.projects {
+  display: flex;
+  background-color: #F3EEE7;
+  height: 25rem;
+  width: 100%;
+}
