@@ -84,8 +84,8 @@ main.hero {
 }
 
 .hero > .heroLeft {
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   text-align: center;
 }
 
@@ -105,7 +105,7 @@ main.hero {
   height: 100%;
 }
 
-main.hero + main.projects {
+main.hero + section.projects {
   display: flex;
   background-color: #F3EEE7;
   height: 25rem;
