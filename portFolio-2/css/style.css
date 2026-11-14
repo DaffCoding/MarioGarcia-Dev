@@ -25,6 +25,10 @@ body {
   
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Header && Footer : color */
 
 /********************** ********************
@@ -36,13 +40,42 @@ header, footer {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #0B1726;
   height: 6rem;
   width: 100%;
 }
+header > nav {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header > nav > ul > li {
+  border: solid 3px #C9B79B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  list-style-type: none;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+header > nav > ul > 
 
 footer {
   background-color: #0B1726;
@@ -63,14 +96,16 @@ Warm Ivory | #F3EEE7 | Projects, Lighter-Text
 */
 
 
+                /* -------< Section 1 >------- */
+
 main.hero {
   display: flex;
   color: #E8E9E8;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #101F32;
-  height: 32rem;
+  height: 40rem;
   width: 100%;
   padding: 0.5rem;
   text-align: center;
@@ -80,34 +115,148 @@ main.hero {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 40%;
 }
-
 .hero > .heroLeft {
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
-
+.hero > .heroLeft > h1 {
+  width: 85%;
+  line-height: 2;
+  font-size: xx-large;
+}
+.hero > .heroLeft > p {
+  font-size: x-large;
+  line-height: 1.5;
+  width: 90%;
+}
+.hero > .heroLeft > span {
+  font-size: large;
+}
+.hero > .heroLeft > .buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 70%;
+}
+.hero > .heroLeft > .buttonWrapper > button{
+  background-color: #C9B79B;
+  height: 3.5em;
+  width: 7em;
+  margin: 0 23.8px;
+}
 .hero > .heroRight {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .hero > .heroRight > div {
   border: solid 10px #C9B79B;
   height: 100%;
   width: auto;
 }
-
 .hero > .heroRight > div > img {
   height: 100%;
 }
 
-main.hero + section.projects {
+
+                /* -------< Section 2 >------- */
+
+.projects {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #F3EEE7;
-  height: 25rem;
+  height: 35rem;
   width: 100%;
+}
+.projects .projectTop {
+  height: 20%;
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+}
+.projects .projectTop h2 {
+  font-size: xx-large;
+}
+.projects .projectTop p {
+  font-size: larger;
+}
+.projects .projectWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+.projects .project {
+  border: solid 5px #101F32;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 23em;
+  width: 25em;
+}
+.projects .project .imgContainer {
+  border: solid 3px #101F32;
+  background-color: #E8E9E8;
+  height: 50%;
+  width: 80%;
+  margin: 0.5em 0 0 0;
+}
+
+/* main.hero + .projects > .projectWrapper > project > imgContainer > img.class = here */
+
+.projects .project > .imgContainer + h3 {
+  font-size: xx-large;
+  padding: 0 0 30px 0;
+}
+.projects > .project > .imgContainer + span {
+  font-size: x-large;
+}
+
+                /* -------< Section 3 >------- */
+
+.aboutMe {
+  background-color: #101F32;
+  color: #E8E9E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 32rem;
+  width: 100%;
+}
+
+.aboutMe > h2 {
+  font-size: xx-large;
+}
+
+.aboutMe p {
+  font-size: x-large;
+  width: 60%;
+}
+
+.aboutMe .buttonWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 40%;
+}
+
+.aboutMe .buttonWrapper > button{
+  background-color: #C9B79B;
+  height: 3em;
+  width: 6aem;
+  margin: 0 23.8px;
 }
